@@ -1,0 +1,298 @@
+.sidebar.collapsed {
+    width: 60px;
+    min-width: 60px;
+    transition: width 0.3s;
+}
+.sidebar.collapsed nav ul li a {
+    font-size: 0;
+    padding: 0;
+}
+.sidebar.collapsed nav ul li a::before {
+    content: '';
+}
+.sidebar.collapsed #toggle-sidebar {
+    font-size: 1.5em;
+}
+.content {
+    transition: margin-left 0.3s;
+}
+.sidebar.collapsed ~ .content {
+    margin-left: 60px;
+}
+/* Présentation block styles (harmonisé) */
+.presentation-block {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(34,46,80,0.07);
+    margin: 32px 0;
+    padding: 32px 24px;
+}
+.presentation-title {
+    color: #222e50;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.presentation-columns {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+.presentation-col {
+    flex: 1 1 320px;
+    background: #f8f8fa;
+    border-radius: 8px;
+    padding: 18px 16px;
+    box-shadow: 0 1px 6px rgba(34,46,80,0.05);
+    margin-bottom: 12px;
+}
+.presentation-col h3 {
+    color: #222e50;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+.presentation-col p {
+    color: #3a4a6b;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+@media (max-width: 900px) {
+    .presentation-columns {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+/* Entreprise block styles (similaire BTS SIO) */
+.entreprise-block {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(34,46,80,0.07);
+    margin: 32px 0;
+    padding: 32px 24px;
+}
+.entreprise-title {
+    color: #222e50;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.entreprise-columns {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+.entreprise-col {
+    flex: 1 1 320px;
+    background: #f8f8fa;
+    border-radius: 8px;
+    padding: 18px 16px;
+    box-shadow: 0 1px 6px rgba(34,46,80,0.05);
+    margin-bottom: 12px;
+}
+.entreprise-col h3 {
+    color: #222e50;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+.entreprise-col p {
+    color: #3a4a6b;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+@media (max-width: 900px) {
+    .entreprise-columns {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+/* BTS SIO block styles */
+.bts-sio-block {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(34,46,80,0.07);
+    margin: 32px 0;
+    padding: 32px 24px;
+}
+.bts-title {
+    color: #222e50;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.bts-intro {
+    color: #222e50;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+}
+.bts-desc {
+    color: #3a4a6b;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+}
+.bts-subtitle {
+    color: #222e50;
+    font-size: 1.2em;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+.bts-options {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+.bts-option {
+    flex: 1 1 320px;
+    background: #f8f8fa;
+    border-radius: 8px;
+    padding: 18px 16px;
+    box-shadow: 0 1px 6px rgba(34,46,80,0.05);
+    margin-bottom: 12px;
+}
+.bts-icon {
+    font-size: 1.3em;
+    margin-right: 8px;
+}
+.bts-option strong {
+    color: #222e50;
+    font-size: 1.1em;
+}
+.bts-option ul {
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-left: 18px;
+}
+.bts-option ul li {
+    color: #3a4a6b;
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+.accueil-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+.accueil-main h1 {
+    color: #222e50;
+    font-size: 2.5em;
+    margin-bottom: 18px;
+}
+.accueil-main p {
+    color: #3a4a6b;
+    font-size: 1.2em;
+    margin-bottom: 32px;
+}
+.accueil-links {
+    display: flex;
+    gap: 24px;
+}
+.accueil-btn {
+    padding: 16px 32px;
+    background: linear-gradient(90deg, #222e50 60%, #3a4a6b 100%);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(34,46,80,0.12);
+    transition: background 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+.accueil-btn:hover {
+    background: linear-gradient(90deg, #3a4a6b 60%, #222e50 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background: #222e50;
+    color: #fff;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar nav ul li {
+    margin: 0;
+}
+.sidebar nav ul li a {
+    display: block;
+    padding: 18px 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.sidebar nav ul li a:hover, .sidebar nav ul li a.active {
+    background: #1b2236;
+}
+.content {
+    margin-left: 220px;
+    padding: 40px 32px;
+    min-height: 100vh;
+}
+h1 {
+    color: #222e50;
+}
+h2 {
+    color: #3a4a6b;
+}
+
+    .btn-cv {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 12px 28px;
+        background: linear-gradient(90deg, #222e50 60%, #3a4a6b 100%);
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(34,46,80,0.12);
+        transition: background 0.2s, transform 0.2s;
+        cursor: pointer;
+    }
+    .btn-cv:hover {
+        background: linear-gradient(90deg, #3a4a6b 60%, #222e50 100%);
+        transform: translateY(-2px) scale(1.04);
+    }
+
+        .info-block {
+            margin-bottom: 32px;
+            padding: 18px 0;
+        }
+        .section-separator {
+            border: none;
+            border-top: 2px solid #3a4a6b;
+            margin: 0 0 24px 0;
+            width: 80%;
+            opacity: 0.3;
+        }
