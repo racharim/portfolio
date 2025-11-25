@@ -8,7 +8,8 @@
     <script src="assets/script.js" defer></script>
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
+        <button id="toggle-sidebar" aria-label="Replier la barre latérale" style="background:#222e50;color:#fff;border:none;padding:10px;width:100%;font-size:1.2em;cursor:pointer;">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Présentation</a></li>
@@ -18,13 +19,42 @@
         </nav>
     </aside>
     <main class="content">
-        <h1>Veille Informatique</h1>
-        <section>
-            <h2>Sujets de veille</h2>
-            <ul>
-                <li>Sujet 1 : description...</li>
-                <li>Sujet 2 : description...</li>
-            </ul>
+        <section aria-labelledby="veille-cards">
+            <h2 id="veille-cards">mes sujets de veille</h2>
+            <div class="cards">
+                <article class="card" role="article" aria-labelledby="ia-title">
+                    <h3 id="ia-title">L'évolution de l'IA</h3>
+                    <h4 class="card-subtitle">
+                        <a href="https://www.lesnumeriques.com/intelligence-artificielle/gemini-3-est-disponible-voici-tout-ce-qu-il-faut-savoir-sur-ce-modele-qui-nous-rapproche-d-une-agi-n245801.html" target="_blank" rel="noopener noreferrer">
+                            Gemini 3 est disponible : voici tout ce qu'il faut savoir sur ce modèle qui nous rapproche d'une AGI
+                        </a>
+                    </h4>
+                    <p>
+                        Gemini 3 est disponible : voici tout ce qu'il faut savoir sur ce modèle qui nous rapproche d'une AGI.
+                        Gemini 3 apporte des améliorations importantes en compréhension et génération multimodale, raisonnement
+                        complexe et efficacité par rapport aux générations précédentes. Il combine une large base de connaissances,
+                        meilleure robustesse aux instructions, et des capacités avancées de composition multimodale (texte, image,
+                        voix). Les points clés : meilleures performances sur tâches de raisonnement, intégration multimodale plus
+                        naturelle, et mécanismes de sécurité renforcés — malgré tout, des limites subsistent (biais, hallucinations,
+                        contraintes compute). En résumé, Gemini 3 représente un pas notable vers des systèmes plus généraux, mais
+                        nous n'avons pas encore une AGI complète : vigilance et évaluation continue restent nécessaires.
+                    </p>
+                    <a href="#" title="En savoir plus sur l'évolution de l'IA">plus d'articles →</a>
+                </article>
+
+                <article class="card" role="article" aria-labelledby="java-title">
+                    <h3 id="java-title">Dernières nouvelles de Java</h3>
+                    <h4 class="card-subtitle">
+                        <a href="https://www.sqli.com/fr-fr/insights-news/blog/java-25" target="_blank" rel="noopener noreferrer">
+                            Java 25 : quelles nouveautés pour le successeur de Java 21 ?
+                        </a>
+                    </h4>
+                    <p>
+                        Java 25, la nouvelle version LTS (Long-Time Support), apporte des améliorations majeures en performance et en simplification du langage par rapport aux générations précédentes (depuis Java 21), renforçant sa position pour les applications cloud-native et serverless. Elle consolide le Projet Leyden pour un démarrage quasi instantané et une réduction significative de la consommation mémoire. Cette version combine un Cache Ahead-Of-Time (AOT) (JEPs 483, 514, 515) pour accélérer le démarrage jusqu'à 50%, des Compact Object Headers (JEP 519) permettant d'économiser jusqu'à 20% de mémoire, et des évolutions des Garbage Collectors (mode générationnel pour ZGC et Shenandoah). Les points clés du langage incluent : l'introduction de la syntaxe compacte pour simplifier le code (JEP 512) et des variables anonymes (_) pour les variables inutilisées (JEP 456), l'import des modules en une seule ligne (JEP 511), la possibilité d'utiliser le format Markdown pour la documentation (JEP 467) et la flexibilité accrue des constructeurs (JEP 513). Elle continue également l'évolution des APIs avec les Scoped Values (JEP 502), la finalisation de la Foreign Function & Memory API (FFM) pour l'interopérabilité native sécurisée, et prépare l'avenir avec l'introduction d'une API pour anticiper l'informatique quantique (KDF API). En résumé, Java 25 représente un pas notable vers un système plus performant et plus simple, essentiel pour l'adoption dans les environnements de développement modernes.
+                    </p>
+                    <a href="#" title="Dernières nouvelles de Java">plus d'articles →</a>
+                </article>
+            </div>
         </section>
     </main>
 </body>
