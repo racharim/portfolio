@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/script.js" defer></script>
 </head>
+
 <body>
     <aside class="sidebar" id="sidebar">
-        <button id="toggle-sidebar" aria-label="Replier la barre latérale" style="background:#222e50;color:#fff;border:none;padding:10px;width:100%;font-size:1.2em;cursor:pointer;">☰</button>
+        <button id="toggle-sidebar" aria-label="Replier la barre latérale"
+            style="background:#222e50;color:#fff;border:none;padding:10px;width:100%;font-size:1.2em;cursor:pointer;">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Présentation</a></li>
@@ -22,16 +25,32 @@
         <h1>Projets & Tâches réalisés</h1>
         <section>
             <h2>Liste des projets</h2>
-            <ul>
-                <li>Projet 1 : description...</li>
-                <li>Projet 2 : description...</li>
-            </ul>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/jira/jira1.png" alt="Projet Jira API"
+                        style="width:100%; height:320px; object-fit:contain; border-radius:4px; margin-bottom:10px; background:#fff;">
+                    <h3>Jira</h3>
+                    <p style="font-size: 0.9em; margin-bottom: 5px;">Application Java 21 SPRING qui utilise les info de
+                        l'api Jira et simplifie les réponses.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/qce/qce_front.png" alt="Projet QCE"
+                        style="width:100%; height:320px; object-fit:contain; border-radius:4px; margin-bottom:10px; background:#fff;">
+                    <h3>QCE</h3>
+                </div>
+            </div>
             <h2>Tâches réalisées</h2>
-            <ul>
-                <li>Tâche 1 : description...</li>
-                <li>Tâche 2 : description...</li>
-            </ul>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/sonar/sonar.png" alt="Sonar"
+                        style="width:100%; height:320px; object-fit:contain; border-radius:4px; margin-bottom:10px; background:#fff;">
+                    <h3>Java 17 & Sonar</h3>
+                    <p style="font-size: 0.9em; margin-bottom: 5px;">Mise à niveau vers Java 17 et analyse de code avec
+                        Sonar.</p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
+
 </html>
