@@ -235,6 +235,32 @@ body {
     flex-direction: column;
     z-index: 100;
 }
+.linkedin-link {
+    margin-top: auto;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #0a66c2;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-link:hover {
+    background: #084f99;
+}
+
+.sidebar.collapsed .linkedin-link {
+    margin-left: 10px;
+}
 .sidebar nav ul {
     list-style: none;
     padding: 0;

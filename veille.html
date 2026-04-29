@@ -17,16 +17,18 @@
                 <li><a href="veille.html">Veille Informatique</a></li>
             </ul>
         </nav>
+        <a class="linkedin-link" href="https://www.linkedin.com/in/alexis-esnault-751156297/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <span>in</span>
+        </a>
     </aside>
     <main class="content">
         <section aria-labelledby="veille-methodo">
             <article class="card methodology" role="article" aria-labelledby="veille-title">
                 <h3 id="veille-title">Méthodologie de ma veille</h3>
                 <p>
-                    Ma veille est organisée quotidiennement et structurée : je collecte les informations via flux RSS,
+                    Ma veille est organisée quotidiennement et structurée : je collecte les informations via flux RSS(<a href="https://feedly.com/i/my/me" target="_blank" rel="noopener noreferrer">feedly.com/i/my/me</a>),
                     newsletters spécialisées, alertes Google, et sources officielles (blogs techniques, RFC, arXiv, sites
-                    des éditeurs). J'utilise des tags pour trier les sujets (IA, Java), j'enregistre les articles
-                    pertinents dans un lecteur et je crée des résumés courts pour chaque élément utile.
+                    des éditeurs). J'utilise des tags pour trier les sujets (IA, Java).
                     
                 </p>
             </article>
@@ -35,37 +37,45 @@
         <section aria-labelledby="veille-cards">
             <h2 id="veille-cards">mes sujets de veille</h2>
             <div class="cards">
-                <article class="card" role="article" aria-labelledby="ia-title">
-                    <h3 id="ia-title">L'évolution de l'IA</h3>
+                <article class="card" role="article" aria-labelledby="ia-mythos-title">
+                    <h3 id="ia-mythos-title">L'évolution de l'IA</h3>
                     <h4 class="card-subtitle">
-                        <a href="https://www.lesnumeriques.com/intelligence-artificielle/gemini-3-est-disponible-voici-tout-ce-qu-il-faut-savoir-sur-ce-modele-qui-nous-rapproche-d-une-agi-n245801.html" target="_blank" rel="noopener noreferrer">
-                            Gemini 3 est disponible : voici tout ce qu'il faut savoir sur ce modèle qui nous rapproche d'une AGI
+                        <a href="https://mondenumerique.info/podcast/monde-numerique/episode/mythos-revolution-ou-mirage-de-la-cybersecurite-vincent-laurens-capgemini" target="_blank" rel="noopener noreferrer">
+                            Mythos : révolution ou mirage de la cybersécurité ? — Vincent Laurens, Capgemini
                         </a>
                     </h4>
                     <p>
-                        Gemini 3 est disponible : voici tout ce qu'il faut savoir sur ce modèle qui nous rapproche d'une AGI.
-                        Gemini 3 apporte des améliorations importantes en compréhension et génération multimodale, raisonnement
-                        complexe et efficacité par rapport aux générations précédentes. Il combine une large base de connaissances,
-                        meilleure robustesse aux instructions, et des capacités avancées de composition multimodale (texte, image,
-                        voix). Les points clés : meilleures performances sur tâches de raisonnement, intégration multimodale plus
-                        naturelle, et mécanismes de sécurité renforcés — malgré tout, des limites subsistent (biais, hallucinations,
-                        contraintes compute). En résumé, Gemini 3 représente un pas notable vers des systèmes plus généraux, mais
-                        nous n'avons pas encore une AGI complète : vigilance et évaluation continue restent nécessaires.
+                        L'émergence d'IA puissantes comme Mythos change la donne. Elle permet une détection de vulnérabilités
+                        (même anciennes ou inconnues) beaucoup plus rapide et profonde, ce qui renforce mécaniquement la défense.
+                        Cependant, cette même capacité d'automatisation et d'analyse est déjà utilisée par les attaquants pour
+                        identifier des failles à une vitesse dépassant l'humain.
                     </p>
-                    <a href="#" title="En savoir plus sur l'évolution de l'IA">plus d'articles →</a>
+                    <p>
+                        Bien que la menace soit réelle et performante, Vincent Laurens appelle à la mesure : il n'y a pas encore
+                        de dégâts massifs avérés et une part du risque actuel relève encore du fantasme. La cybersécurité reste
+                        une lutte classique entre "chapeaux blancs" (défenseurs) et "chapeaux noirs" (attaquants), où l'IA ne fait
+                        qu'accélérer le cycle découverte/exploitation.
+                    </p>
+                    <p>
+                        Pour faire face à ces évolutions, la stratégie repose sur trois piliers : l'<strong>hygiène cyber</strong>
+                        (appliquer rigoureusement les correctifs de sécurité), la <strong>culture interne</strong> (sensibilisation
+                        portée par la direction), et la <strong>veille & automatisation</strong> (anticiper les menaces et utiliser
+                        des agents automatisés pour accélérer la correction des failles). L'IA est une opportunité majeure pour la
+                        défense, à condition de structurer le cadre de recherche des vulnérabilités et de ne pas négliger les bases.
+                    </p>
                 </article>
 
                 <article class="card" role="article" aria-labelledby="java-title">
                     <h3 id="java-title">Dernières nouvelles de Java</h3>
                     <h4 class="card-subtitle">
-                        <a href="https://www.sqli.com/fr-fr/insights-news/blog/java-25" target="_blank" rel="noopener noreferrer">
-                            Java 25 : quelles nouveautés pour le successeur de Java 21 ?
+                        <a href="https://java.developpez.com/actu/381243/Oracle-lance-Java-26-la-derniere-version-du-langage-de-programmation-et-de-la-plateforme-de-developpement-avec-des-ameliorations-axees-sur-l-integration-de-l-IA-le-chiffrement-et-la-productivite/" target="_blank" rel="noopener noreferrer">
+                            Oracle lance Java 26 : une version axée IA, chiffrement et productivité
                         </a>
                     </h4>
                     <p>
-                        Java 25, la nouvelle version LTS (Long-Time Support), apporte des améliorations majeures en performance et en simplification du langage par rapport aux générations précédentes (depuis Java 21), renforçant sa position pour les applications cloud-native et serverless. Elle consolide le Projet Leyden pour un démarrage quasi instantané et une réduction significative de la consommation mémoire. Cette version combine un Cache Ahead-Of-Time (AOT) (JEPs 483, 514, 515) pour accélérer le démarrage jusqu'à 50%, des Compact Object Headers (JEP 519) permettant d'économiser jusqu'à 20% de mémoire, et des évolutions des Garbage Collectors (mode générationnel pour ZGC et Shenandoah). Les points clés du langage incluent : l'introduction de la syntaxe compacte pour simplifier le code (JEP 512) et des variables anonymes (_) pour les variables inutilisées (JEP 456), l'import des modules en une seule ligne (JEP 511), la possibilité d'utiliser le format Markdown pour la documentation (JEP 467) et la flexibilité accrue des constructeurs (JEP 513). Elle continue également l'évolution des APIs avec les Scoped Values (JEP 502), la finalisation de la Foreign Function & Memory API (FFM) pour l'interopérabilité native sécurisée, et prépare l'avenir avec l'introduction d'une API pour anticiper l'informatique quantique (KDF API). En résumé, Java 25 représente un pas notable vers un système plus performant et plus simple, essentiel pour l'adoption dans les environnements de développement modernes.
+                        Java 26 marque une étape importante dans l'évolution de l'écosystème Oracle, en se concentrant sur trois piliers : l'IA, la sécurité moderne et la performance brute. Sur le plan du développement, cette version simplifie l'écriture du code grâce à une meilleure gestion des types primitifs dans les motifs de recherche (pattern matching), rendant le langage plus expressif. L'intégration de l'API HTTP/3 et l'amélioration de la concurrence structurée permettent aux développeurs de concevoir des microservices plus robustes et plus rapides, tout en facilitant la maintenance du code multithread. L'aspect performance est porté par le Projet Leyden, qui optimise drastiquement le temps de démarrage des applications en mettant en cache des objets pré-initialisés. Parallèlement, le ramasse-miettes G1 GC gagne en efficacité en réduisant les temps de pause, ce qui permet de traiter plus de données avec moins de ressources matérielles. Enfin, Oracle renforce l'aspect industriel de Java avec le Java Verified Portfolio (JVP), un ensemble de bibliothèques et d'outils comme Helidon pour le cloud, certifiés par l'éditeur. Côté sécurité, Java 26 s'adapte aux nouvelles menaces avec une gestion simplifiée des clés cryptographiques (PEM) et des bases pour la signature de fichiers prêtes pour l'informatique post-quantique.
                     </p>
-                    <a href="#" title="Dernières nouvelles de Java">plus d'articles →</a>
+                    <a href="pageJava.html" title="Dernières nouvelles de Java">plus d'articles →</a>
                 </article>
             </div>
         </section>

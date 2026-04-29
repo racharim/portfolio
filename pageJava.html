@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio BTS SIO - Veille Java</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<script src="assets/script.js" defer></script>
+</head>
+<body>
+	<aside class="sidebar" id="sidebar">
+		<button id="toggle-sidebar" aria-label="Replier la barre latérale" style="background:#222e50;color:#fff;border:none;padding:10px;width:100%;font-size:1.2em;cursor:pointer;">☰</button>
+		<nav>
+			<ul>
+				<li><a href="index.html">Présentation</a></li>
+				<li><a href="projets.html">Projets & Tâches</a></li>
+				<li><a href="veille.html">Veille Informatique</a></li>
+			</ul>
+		</nav>
+		<a class="linkedin-link" href="https://www.linkedin.com/in/alexis-esnault-751156297/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+			<span>in</span>
+		</a>
+	</aside>
+
+	<main class="content">
+		<h1>Veille Java</h1>
+		<section aria-labelledby="java-cards">
+			<h2 id="java-cards">Articles Java</h2>
+			<div class="cards">
+				<article class="card" role="article" aria-labelledby="java-title">
+					<h3 id="java-title">Dernières nouvelles de Java</h3>
+					<h4 class="card-subtitle">
+						<a href="https://www.sqli.com/fr-fr/insights-news/blog/java-25" target="_blank" rel="noopener noreferrer">
+							Java 25 : quelles nouveautés pour le successeur de Java 21 ?
+						</a>
+					</h4>
+					<p>
+						Java 25, la nouvelle version LTS (Long-Time Support), apporte des améliorations majeures en performance et en simplification du langage par rapport aux générations précédentes (depuis Java 21), renforçant sa position pour les applications cloud-native et serverless. Elle consolide le Projet Leyden pour un démarrage quasi instantané et une réduction significative de la consommation mémoire. Cette version combine un Cache Ahead-Of-Time (AOT) (JEPs 483, 514, 515) pour accélérer le démarrage jusqu'à 50%, des Compact Object Headers (JEP 519) permettant d'économiser jusqu'à 20% de mémoire, et des évolutions des Garbage Collectors (mode générationnel pour ZGC et Shenandoah). Les points clés du langage incluent : l'introduction de la syntaxe compacte pour simplifier le code (JEP 512) et des variables anonymes (_) pour les variables inutilisées (JEP 456), l'import des modules en une seule ligne (JEP 511), la possibilité d'utiliser le format Markdown pour la documentation (JEP 467) et la flexibilité accrue des constructeurs (JEP 513). Elle continue également l'évolution des APIs avec les Scoped Values (JEP 502), la finalisation de la Foreign Function & Memory API (FFM) pour l'interopérabilité native sécurisée, et prépare l'avenir avec l'introduction d'une API pour anticiper l'informatique quantique (KDF API). En résumé, Java 25 représente un pas notable vers un système plus performant et plus simple, essentiel pour l'adoption dans les environnements de développement modernes.
+					</p>
+					<a href="veille.html" title="Retour à la veille">retour à la veille →</a>
+				</article>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
